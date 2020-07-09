@@ -54,14 +54,14 @@
   },
   "peerDependenciesMeta": {
     "node-gyp": {
-      "optional": true 
+      "optional": true
     }
   },
   "optionalDependencies": {
     "node-gyp": "3.x"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "bash install.sh",
     "pretest": "node test/support/createdb.js",
     "test": "mocha -R spec --timeout 480000",
     "pack": "node-pre-gyp package"
